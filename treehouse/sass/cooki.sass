@@ -1,0 +1,65 @@
+#bg_popup
+	position: fixed
+	z-index: 99999
+	background: rgba(0, 0, 0, 0.8)
+	right: 0
+	bottom: 0
+	left: 0
+	display: none
+	
+   
+#popup 
+	background: #222
+	margin: 30px 0
+	padding: 10px
+	position: relative
+	display: flex
+	color: rgba(#fff, .7)
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	max-width: 1000px
+	margin-left: auto
+	margin-right: auto
+	text-align: center
+	
+.close
+		display: inline-block
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: #7cc577
+		padding: 15px 45px
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 600
+		letter-spacing: 3px
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		margin-left: 20px
+		&::after
+			transition: background-color .2s ease
+			position: absolute
+			content: ''
+			height: 4px
+			bottom: 0
+			width: 100%
+			background-color: darken(#7cc577, 50%)
+			opacity: .18
+			border-bottom-left-radius: 2px
+			border-bottom-right-radius: 2px
+			left: 0
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+		&:hover
+			background-color: lighten(#7cc577, 5%)
+		&::after
+			opacity: .22
+		&:active
+			background-color: darken(#7cc577, 5%)
+		&::after
+			opacity: .32

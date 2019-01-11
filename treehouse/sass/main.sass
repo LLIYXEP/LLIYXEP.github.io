@@ -1,0 +1,624 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+@import "cooki"
+// font-family: 'Montserrat', sans-serif
+// font-family: 'Roboto Slab', serif
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+	margin: 0
+	padding: 0
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Roboto Slab', serif
+	font-weight: 400
+	overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+	margin: 0
+	padding: 0
+
+h4
+	font-size: 18px
+	font-family: Montserrat,sans-serif
+	color: #222;
+	font-weight: 700
+	line-height: .8
+
+ul, li
+	margin: 0
+	padding: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+.container-padding
+	padding-top: 90px
+	padding-bottom: 90px
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.container
+	width: 940px
+	margin-left: auto
+	margin-right: auto
+
+.row
+	display: flex
+	flex-direction: row
+
+.after-footer-row
+	display: flex
+	flex-direction: row
+
+.footer-row
+	display: flex
+	flex-direction: row
+
+.col-1-of-3
+	width: 33%
+
+.col-1-of-3-small
+	width: 30%
+.col-1-of-3-big
+	width: 36%
+
+// .col-3
+// 	margin-left: 10px
+// 	margin-right: 10px
+
+// .col-3
+// 	width: 222px
+
+.logo-holder
+	width: 220px
+	padding: 45px 0
+
+.navigation-holder
+	width: 700px
+	padding: 45px 0
+
+.navigation-list
+	list-style-type: none
+	display: flex
+	flex-direction: row
+	justify-content: flex-end
+	&__item
+		padding-left: 30px
+		text-transform: uppercase
+		a 
+			color: #777
+			text-decoration: none
+			font-family: 'Montserrat', sans-serif
+			transition: all .25s ease-out
+			border-bottom: 0px solid #7cc576
+			padding-bottom: 6px
+			&:hover,&:focus,&:active
+				color: #2ab412
+				border-bottom: 1px solid #7cc576
+				text-decoration: none
+				padding-bottom: 1px
+				outline: none
+			&:active
+				color: #f86900
+				border-bottom: 1px solid #f86900
+				text-decoration: none
+				padding-bottom: 1px
+
+
+
+.container-fluid
+	width: 100%
+	padding: 0
+
+.header
+	height: 530px
+	position: relative
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	text-align: center
+	display: flex
+	flex-direction: row
+	justify-content: center
+	letter-spacing: -2px
+	z-index: -2
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #000
+		opacity: .75
+	.heading-1
+  	font-size: 60px
+  	line-height: 1.083
+  	text-transform: uppercase
+  	color: #fff
+  	position: relative
+  	font-weight: 700
+  	font-family: 'Montserrat', sans-serif
+  	letter-spacing: -2px
+	.subtitle--header
+		font-size: 20px
+		color: #ccc
+		line-height: 1.2
+		font-family: 'Roboto Slab', serif
+		position: relative
+		margin-top: 35px
+		margin-bottom: 20px
+		letter-spacing: 0.7px
+	.button
+		height: 60px
+		background-color: #7cc576
+		border-radius: 50px
+		padding: 17px 35px 20px 35px
+		position: relative
+		display: inline-block
+		margin-top: 40px
+		color: #fff
+		font-size: 16px
+		font-family: 'Montserrat', sans-serif
+		text-align: center
+		font-weight: 700
+		letter-spacing: .5px
+		text-transform: uppercase
+		text-decoration: none
+		text-shadow: 0px 1px 1px rgba(34, 129, 26, 1)
+		transition: all .3s ease
+		&:hover,&:focus,&:active
+			border: #fff 2px solid
+			background-color: darken(#7cc576, 10%)
+		&:active
+			background-color: darken(#7cc576, 20%)
+
+.header-content
+	width: 620px
+	padding: 110px 0
+
+.heading-blog
+	margin-bottom: 80px
+	text-align: center
+	
+.heading-2-white
+	color: #fff
+	font-weight: 700
+	font-size: 40px
+	line-height: 50px
+	letter-spacing: -1px
+	font-family: 'Montserrat', sans-serif
+	text-transform: uppercase
+	margin-bottom: 30px
+	em 
+		color: #7cc576
+
+.heading-2
+	color: #222
+	font-weight: 700
+	font-size: 40px
+	line-height: 1.475
+	letter-spacing: -1px
+	font-family: 'Montserrat', sans-serif
+	text-transform: uppercase
+
+
+.subtitle
+	font-family: 'Roboto Slab', serif
+	font-size: 20px
+	color: #777
+
+.service__box
+	text-align: center
+	&__icon
+		margin-bottom: 35px
+		img
+			height: 48px
+	&__header
+		font-size: 18px
+		color: #222
+		font-family: 'Montserrat', sans-serif
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 10px
+		letter-spacing: -0.5px
+	&__text
+		font-size: 14px
+		color: #777
+		letter-spacing: -0.5px
+
+.special-bg-block
+	// height: 615px
+	display: flex
+	flex-direction: row
+	position: relative
+	z-index: -1
+	.bg-icon
+		width: 30%
+		background-color: #e9e9e9
+		position: relative
+		&:after 
+			display: block
+			width: 190px
+			height: 100%
+			position: absolute
+			content: ""
+			background-image: url(../img/bg/bg-gear.svg)
+			background-repeat: no-repeat
+			background-position: left center
+			right: 0
+			top: 0
+	.bg-photo
+		width: 70%
+		background-image: url(../img/bg/bg-relax.jpg)
+		background-repeat: no-repeat
+		background-position: left top 
+		background-size: cover
+		z-index: -1
+		&::before
+			content: ""
+			position: absolute
+			top: 0
+			left: 0
+			width: 100%
+			height: 100%
+			background-color: #000
+			opacity: .75
+			z-index: -1
+	&-content
+		padding: 100px
+		width: 700px
+		color: #ccc
+		ul
+			list-style-type: none
+			margin-top: 25px
+			li 
+				margin-bottom: 14px
+				img
+					margin-right: 20px
+					width: 33px
+					height: 33px
+					color: #ccc
+		p 
+			font-size: 18px
+	.button
+		cursor: pointer
+		height: 60px
+		background-color: #7cc576
+		border-radius: 50px
+		padding: 17px 35px 20px 35px
+		position: relative
+		display: inline-block
+		margin-top: 40px
+		color: #fff
+		font-size: 16px
+		font-family: 'Montserrat', sans-serif
+		text-align: center
+		font-weight: 700
+		letter-spacing: .5px
+		text-transform: uppercase
+		text-decoration: none
+		text-shadow: 0px 1px 1px rgba(34, 129, 26, 1)
+		transition: all .3s ease
+		&:hover,&:focus,&:active
+			border: #fff 2px solid
+			background-color: darken(#7cc576, 10%)
+		&:active
+			background-color: darken(#7cc576, 20%)
+
+.navigation-button
+	display: none
+
+.last-project
+	background-image: url(../img/bg/tablet.jpg)
+	background-repeat: no-repeat
+	background-position: right 80%
+	&__content
+		width: 500px
+		&__header
+			font-size: 18px
+			text-transform: uppercase
+			line-height: 
+			color: rgb( 34, 34, 34 )
+			margin-bottom: 25px
+		&__subtitle
+			font-size: 16px
+			font-family: 'Roboto Slab', serif
+			color: rgb( 119, 119, 119 )
+		&__items
+			&__item
+				display: flex
+				flex-direction: row
+				.icon-wrap
+					width: 70px
+					height: 70px
+					display: flex
+					align-items: center
+					justify-content: center
+					border: #333 3px solid
+					border-radius: 10em
+					margin-bottom: 30px
+					margin-right: 15px
+					.icon
+						.fas 
+							font-size: 40px
+							text-align: center
+				.text
+					.title
+						font-size: 18px
+						font-family: "Montserrat", sans-serif
+						color: rgb( 34, 34, 34 )
+						font-weight: 700
+						line-height: .8
+						margin-top: 10px
+					.subtitle
+						font-size: 16px
+						font-family: 'Roboto Slab', serif
+						color: rgb( 119, 119, 119 )
+		&__details
+			font-size: 16px
+			font-family: "Montserrat", sans
+			color: rgb( 124, 197, 118)
+			font-weight: 700
+			text-transform: uppercase
+			a 
+				.fas
+					color: rgb( 124, 197, 118 )
+				&:hover,&:focus,&:active
+					.fas
+						color: darken(rgb( 124, 197, 118 ), 20%)
+
+.values
+	background-color: #f9f9f9
+	&-items
+		display: flex
+		flex-direction: row
+	&-item
+		text-align: center
+		&:nth-child(2)
+			position: relative
+			&:after
+				content: ""
+				position: absolute
+				height: 1.5px
+				width: 165px
+				background-color: #777
+				top: 46px
+				right: -84px
+			&:before 
+				content: ""
+				position: absolute
+				height: 1.5px
+				width: 165px
+				background-color: #777
+				top: 46px;
+				left: -84px;
+		&__icon
+			margin-bottom: 25px
+		&__header
+			font-size: 18px
+			font-family: "Montserrat", sans-serif
+			color: rgb( 34, 34, 34 )
+			font-weight: 700
+			text-transform: uppercase
+			margin-bottom: 13px
+		&__text
+			font-size: 14px
+			font-family: "RobotoSlab", sans-serif
+			color: rgb( 119, 119, 119 )
+			padding: 0 15spx
+
+.client-comment
+	background-color: #fff
+	display: flex
+	align-items: center
+	&__photo
+		width: 220px
+		height: 220px
+		background-color: #f9f9f9
+		border-radius: 10em
+		background-image: url(../img/girl1.jpg)
+		background-repeat: no-repeat
+		background-position: 90% center
+		background-size: cover
+		order: 1
+	&__text
+		width: 640px
+		height: 170px
+		background-color: #f9f9f9
+		padding: 45px
+		text-align: center
+		margin-left: 45px
+		order: 2
+		p 
+			font-size: 22px
+			font-family: "RobotoSlab",sans-serif
+			color: rgb( 119, 119, 119 )
+			line-height: 1.273
+		span 
+			font-size: 18px
+			color: rgb( 124, 197, 118 )
+			line-height: 2
+
+.reverse
+	.client-comment__photo
+		order: 2
+		background-image: url(../img/girl2.jpg)
+		background-position: 100% center
+	.client-comment__text
+		order: 1
+
+.s-contact
+	background-color: #7cc576
+	text-align: center
+	h2
+		font-size: 37px
+		font-family: "Montserrat", sans-serif
+		color: rgb( 255, 255, 255 )
+		font-weight: 700
+		text-transform: uppercase
+		margin-bottom: 25px
+	.button
+		text-decoration: none
+		text-transform: uppercase
+		border-radius: 15px
+		border: #fff 4px solid
+		color: #fff
+		background-color: transparent
+		padding: 15px 30px
+		font-size: 18px
+		font-family: "Montserrat", sans-serif
+		font-weight: 700
+		text-transform: uppercase
+		line-height: 2.278
+		transition: all .3s ease
+		&:hover,&:focus,&:active
+			background-color: #fff
+			color: #7cc576
+		&:active
+			background-color: lighten(#7cc576, 15%)
+
+.container-padding-partners
+	padding: 60px 0
+
+.partners
+	display: flex
+	justify-content: space-between
+
+footer 
+	background-color: #222
+	color: #ececec
+	h4
+		color: #ececec
+		margin-bottom: 25px
+		text-transform: uppercase
+	.footer-padding
+		padding: 60px 0
+	.footer-contacts
+		.icon-wrap
+			width: 40px
+			justify-content: center
+			display: flex
+			.fas 
+					font-size: 30px
+					margin-right: 20px
+		.footer-contact
+			display: flex
+			margin-bottom: 20px
+			&:first-child
+				.fas
+					margin-top: 5px
+
+.posts
+	list-style-type: none
+	li 
+		margin-bottom: 20px
+		height: 30px
+		.far 
+			font-size: 27px
+			margin-right: 15px
+		.fas
+			margin-right: 23px
+			font-size: 30px
+		.fa-image
+			font-size: 30px
+		a
+			color: #ececec
+			text-decoration: none
+			display: flex
+			align-items: center
+			transition: all .3s ease
+			&:hover,&:focus,&:active
+				color: #7cc577
+				span 
+					border-bottom: #7cc577 1px solid
+					
+
+.tweet
+	display: flex
+	margin-bottom: 20px
+	&__icon
+		margin-right: 20px
+		.fab
+			font-size: 25px
+			margin-top: 5px
+
+
+.after-footer
+	padding: 30px 0
+	.order1
+		order: 1
+	.order2
+		order: 2
+	.copyright
+		font-size: 14px
+		font-family: "Montserrat", sans-serif
+		color: rgb( 85, 85, 85 )
+		line-height: 1.571
+		margin-top: 8px
+	.icons
+		display: flex
+		justify-content: center
+		.icon
+			width: 40px
+			height: 40px
+			background-color: #222222
+			border-radius: 10em
+			display: flex
+			justify-content: center
+			align-items: center
+			color: #fff
+			margin-right: 10px
+			cursor: pointer
+			transition: all .3s ease
+			&:hover,&:focus,&:active
+				color: #7cc577
+
+
+
+@import "media" // Всегда в конце

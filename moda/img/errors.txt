@@ -1,0 +1,1 @@
+[Mon Dec 03 2018 10:39:40 GMT+0300 (RTZ 2 (зима))] layer "product-1.jpg": Duplicate path: product-1.jpg

@@ -1,0 +1,397 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	.podgotovka__item
+		min-height: 370px
+
+	.price
+		.price-item__banner
+			background-size: 240px
+			span
+				font-size: 70px
+				small
+					font-weight: 300
+			h4
+				margin-bottom: 30px
+			.cel
+				margin-bottom: 70px
+
+	.main-menu 
+		ul 
+			li
+				padding: 5px
+
+	.new-vozm 
+		.flag
+			display: none
+		.container
+			background-position: left center
+			&:before 
+				display: none
+			&:after
+				display: none
+			.new-vozm__content
+				text-align: center
+				&__header
+					margin-top: 40px
+				&__text
+					margin-top: 50px
+				
+	
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.podgotovka 
+		p
+			height: auto!important
+
+	.price
+		.price-item__banner
+			background-size: 300px
+			h4
+				margin-bottom: 50px
+			.cel
+				margin-top: -20px
+				margin-bottom: 90px
+
+	.contact-map__daten__item
+		padding-left: 30px
+
+	.pass-info 
+		h2
+			font-size: 26px
+
+	.pass-head
+		text-align: center 
+		h2
+			margin-top: 0
+		.pass-img-wrapper
+			margin-top: 20px
+
+	.header-content 
+		.left 
+			text-align: center
+			margin-bottom: 10px
+			.preheader
+				font-size: 27px
+			h1
+				font-size: 34px
+			.logo
+				display: none
+		.right
+			display: flex
+			align-items: center
+			justify-content: space-around 
+
+	.select-us
+		.container-padding
+			padding-bottom: 0
+		&__item
+			margin-top: 0
+
+	.vzaimod
+		.vzaimod__item__img
+			max-width: 300px
+	
+	.new-vozm 
+		.container-padding 
+			.new-vozm__content__header
+				margin-top: 0
+				font-size: 32px
+
+	.last-info__item__header
+		font-size: 20px	
+
+
+	.top-line 
+		.but-wrap
+			margin-top: 8px
+			.button-blue
+				padding: 7px 13px
+
+	.main-menu
+		display: none
+	
+	.wp-item
+		margin-top: 20px
+@media only screen and (max-width : 580px)
+	.top-line
+		text-align: center
+			
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.podgotovka p
+		height: auto!important
+		
+
+	.img-block__overlay
+		h4
+			font-size: 17px
+			text-transform: none
+
+	.container-padding-podg
+		padding-top: 20px
+
+	.accordion .card .col-content
+		flex-direction: column
+
+	.accordion .card .col-content__text
+		margin-top: 20px
+
+	.docs
+		padding-top: 20px
+		h2
+			font-size: 30px
+			margin-bottom: 30px
+
+	.o-nas 
+		h2
+			font-size: 30px
+			text-align: center
+
+	.pass-head
+		h2
+			font-size: 30px
+
+	footer 
+		text-align: center
+		.footer-padding 
+			.request
+				.request__header
+					margin-bottom: 20px
+				.request__button
+					margin-bottom: 20px
+				.request__logo
+					img
+						width: 80px
+			.menu-header
+				margin-top: 50px
+			.footer-contacts
+				margin-top: 50px
+				&__phone
+					justify-content: center
+				&__adress
+					justify-content: center
+
+	.top-line 
+		padding: 8px 0 18px
+		h2
+			font-size: 25px
+			margin-left: 20px
+		.but-wrap 
+			text-align: center
+			.button-blue
+				margin-top: 10px
+
+
+	// .last-info__item
+	// 	margin-top: 30px
+
+	// .last-info 
+	// 	.col-md-6
+	// 		&:nth-child(3)
+	// 			margin-top: 40px
+	// 	.button-blue
+	// 		margin-top: 20px
+
+	.vzaimod__item
+		margin-top: 20px
+
+	.header-content 
+		.right
+			flex-direction: column
+
+	.clients-header 
+		.row
+			background-position: center center
+		h2
+			text-align: center
+			font-size: 30px
+		p 
+			text-align: center
+			
+	.contact-map__form form .button-area
+		flex-direction: column
+		.button
+			margin-top: 25px
+			
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.img-block__overlay
+		h4
+			font-size: 14px
+
+	.price
+		.price-item__banner
+			background-size: 250px
+			h4
+				margin-bottom: 60px
+				font-size: 20px
+			.cel
+
+	.contact-map__daten__item
+		padding: 0
+		flex-direction: column
+		align-items: center
+		text-align: center
+	
+	
+	.contact-map__daten__item__img
+		margin-bottom: 20px
+		margin-left: auto
+		margin-right: auto
+		
+
+	.contact-map h2
+		font-size: 25px
+		margin-top: -20px
+
+	.clients-header 
+		h2
+			font-size: 25px
+		p 
+			font-size: 16px
+
+	.dop-doki h2
+		font-size: 23px
+
+	.recomenduem 
+		h3
+			font-size: 18px
+		h2
+			font-size: 30px
+
+	.podgotovka 
+		h2
+			font-size: 27px
+		p 
+			font-size: 22px
+
+	.card-header
+		padding: 0
+
+	.accordion .card .mb-0 button
+		display: flex
+		flex-direction: column
+		justify-content: center
+		i 
+			margin-right: auto
+	
+	.docs h2
+		font-size: 23px
+
+	.o-nas h2
+		font-size: 22px
+
+	.accordion .card .mb-0 button
+		font-size: 17px
+		&:after 
+			font-size: 15px
+			margin-right: 2px
+
+	.accordion .card .col-content
+		flex-direction: column
+
+	.comments h2
+		font-size: 30px
+
+	.team
+		h2
+			font-size: 30px
+		p
+			font-size: 25px
+			padding: 0 3px
+
+	.come-time
+		h2
+			font-size: 30px
+		p
+			font-size: 25px
+			padding: 0 3px
+
+	.pass-info 
+		h2
+			font-size: 22px!important
+			padding: 0 3px
+
+	.pass-head
+		padding-top: 0
+		h2
+			font-size: 20px
+
+	footer .footer-padding .footer-contacts .footer-contacts__adress, footer .footer-padding .footer-contacts .footer-contacts__phone
+		display: block
+	
+	footer .footer-padding .footer-contacts .footer-contacts__adress img, footer .footer-padding .footer-contacts .footer-contacts__phone img
+		margin-bottom: 10px
+
+	.footer-contacts__adress
+		margin-bottom: 30px
+		margin-top: 20px
+
+	.new-vozm
+		.container
+			background-image: none
+	
+	.uslugi__item
+		margin-top: 20px
+
+	.select-us h2
+		font-size: 30px
+		margin-bottom: 30px
+	
+	.top-line
+		text-align: center
+	
+	.vzaimod h2
+		font-size: 30px
+
+	.header-content
+		&:before 
+		&:after
+			left: -2px
+			width: 5%
+		.right-form
+			width: 280px
+		.left 
+			.preheader
+				font-size: 24px
+			h1
+				font-size: 30px
+
+	
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+

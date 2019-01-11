@@ -1,0 +1,464 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+
+// font-family: 'Muli', sans-serif
+// font-family: 'Lora', serif
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: 'Muli', sans-serif
+	overflow-x: hidden
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6
+
+
+
+section
+	padding: 70px 0 70px
+
+ul, li
+	display: block
+	margin: 0
+	padding: 0
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.nav-wrapper
+	padding: 20px 0
+	align-items: center 
+	.logo
+		font-size: 22px
+		font-weight: 800
+		color: #041122
+		text-transform: uppercase
+	.navigation
+		font-size: 15px
+		font-weight: 660
+		padding-top: 5px
+		&-link
+			color: #52575d
+			text-decoration: none
+			margin-right: 30px
+			&:last-child
+				margin-right: 0
+			&:hover,&:focus,&:active
+				color: #f72464
+				text-decoration: none
+	.cart
+		padding-top: 5px
+		color: #5e5e5e
+		position: relative
+		&-number
+			width: 19px
+			height: 19px
+			background-color: #f72464
+			border-radius: 10em
+			color: #fff
+			font-size: 12px
+			font-weight: 600
+			display: flex
+			justify-content: center
+			align-items: center
+			position: absolute
+			left: 6px
+			top: 20px
+
+
+//HEADER
+
+.header
+	height: 700px
+	background-image: url(../img/bg/girl.jpg)
+	background-repeat: no-repeat
+	background-position: 80% 0%
+	background-color: #fafafa
+	display: flex
+	align-items: center
+	
+.header-content
+	max-width: 750px
+
+
+.header
+	&-title
+		font-size: 80px
+		color: #222
+		font-family: 'Lora', serif
+		line-height: 1.25
+		margin-bottom: 25px
+		margin-top: -20px
+	&-descr
+		font-size: 18px
+		font-weight: 300
+		color: #52575d
+		padding-bottom: 50px
+	&-button
+		background-color: $accent
+		color: #fff
+		font-size: 20px
+		font-family: 'Lora', serif
+		padding: 7px 45px
+		display: inline-block
+		border-radius: 3px
+		cursor: pointer
+		box-shadow: 0px 5px 30px 0px rgba(#1f2325, .25)
+		transition: all .3s ease
+		&:focus,&:hover,&:active
+			background-color: darken($accent, 10%)
+			text-decoration: none
+			color: #fff
+		
+
+//Content
+
+.title
+	font-size: 35px
+	font-family: 'Lora', serif
+	color: #222
+	text-align: center
+	margin: 0
+	margin-bottom: 10px
+	font-weight: 600
+
+.subtitle
+	color: #919191
+	font-size: 12px
+	font-weight: 300
+	text-transform: uppercase
+	text-align: center
+
+.subtitle-lowercase
+	text-transform: none
+	
+
+.heading-block
+	margin-bottom: 70px
+
+.cardpr
+	font-family: 'Lora', serif
+	text-align: center
+	margin-bottom: 50px
+	&-img
+		margin-bottom: 5px
+		position: relative
+		overflow: hidden
+	&-title
+		color: #222
+		font-family: 'Lora', serif
+		font-size: 18px
+		margin-bottom: 10px
+		font-weight: 600
+	&-price
+		font-size: 13px
+		color: $accent
+		font-weight: 600
+		span 
+			color: #838b8f
+			text-decoration: line-through
+			margin-right: 5px
+
+.cardpr-hover
+	opacity: 0
+	position: absolute
+	width: 100%
+	height: 100%
+	background-color: rgba(0,0,0,0.4)
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	top: 0
+	left: 0
+	transition: all .5s ease
+	&:hover
+		opacity: 1
+
+.button-outline
+  border-width: 1px
+  border-color: rgb( 247, 36, 100 )
+  border-style: solid
+  border-radius: 3px
+  height: 38px
+  font-size: 14px
+  font-family: "Lora",sans-serif
+  color: rgb( 145, 145, 145)
+  text-transform: uppercase
+  line-height: 1
+  padding-top: 11px
+  width: 220px
+  text-align: center
+  display: block
+  margin-left: auto
+  margin-right: auto
+  transition: all .3s ease
+  &:focus,&:hover,&:active
+  	text-decoration: none
+  	background-color: $accent
+  	color: #fff
+
+
+.shop-sect
+	background-image: url(../img/bg/bg2.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #000
+		opacity: .75
+
+.shop-text
+	font-size: 60px
+	font-family: "Lora",sans-serif
+	color: #fff
+	line-height: 1.2
+	margin-top: -9px
+
+
+.shop-button
+  border: none
+  background-color: $accent
+  border-radius: 3px
+  font-size: 14px
+  font-family: "Lora",sans-serif
+  color: #fff
+  text-transform: uppercase
+  line-height: 1
+  padding: 15px 60px
+  text-align: center
+  transition: all .3s ease
+  display: flex
+  &:focus,&:hover,&:active
+  	text-decoration: none
+  	background-color: darken($accent, 10%)
+  	color: #fff
+
+.btn-wrap
+	display: flex
+	align-items: center
+	height: 100%
+
+.partners-sect
+	background-image: url(../img/bg/bg1.jpg)
+	background-position: center
+	background-repeat: no-repeat
+	background-size: cover
+	position: relative
+	&::before
+		content: ""
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: #000
+		opacity: .75
+	.partner
+		margin-right: 30px
+		img
+			width: 165px
+			height: 75px
+
+.card-btn
+	background-color: $accent
+	color: #fff
+	font-size: 14px
+	padding: 7px
+	width: 120px
+	height: 40px
+	display: inline-block
+	border-radius: 3px
+	cursor: pointer
+	box-shadow: 0px 5px 30px 0px rgba(#1f2325, .25)
+	transition: all .3s ease
+	margin-bottom: 12px
+	&:focus,&:hover,&:active
+		background-color: darken($accent, 10%)
+		text-decoration: none
+		color: #fff
+
+.footer
+	background-color: #000
+	padding: 20px 0 25px
+	text-align: center
+	&-nav
+		margin-bottom: 20px
+	&-nav-link
+		font-size: 13px
+		color: rgb( 255, 255, 255 )
+		line-height: 1.692
+		margin-right: 35px
+		&:last-child
+			margin-right: 0
+		&:hover
+			color: $accent
+			text-decoration: none
+	&-social
+		margin-bottom: 20px
+		color: #fff
+		font-size: 22px
+		a 
+			color: #fff
+			text-decoration: none
+			margin-right: 25px
+			&:last-child
+				margin-right: 0
+			&:focus,&:hover,&:active
+				color: $accent
+				text-decoration: none
+				
+
+	&-copyright
+		font-size: 12px
+		color: rgb( 137, 137, 137 )
+		line-height: 1.5
+		text-decoration: none
+		
+.description
+	font-size: 15px
+	flex-shrink: 1.6s
+	color: rgb(137,137,137)
+	text-align: center
+	margin-bottom: 40px
+
+.blog
+	margin-bottom: 25px
+	&-title
+		font-size: 18px
+		font-family: "Lora",sans-serif
+		line-height: 1.6
+		color: rgb(34,34,34)
+		font-weight: 600
+		margin-bottom: 10px
+	&-descr
+		font-size: 15px
+		line-height: 1.6
+		color: rgb(137,137,137)
+		margin-bottom: 10px
+	&-read-more
+		font-size: 15px
+		line-height: 1.2
+		color: rgb( 34, 34, 34 )
+		font-weight: 600
+		font-family: "Lora",sans-serif
+		display: flex
+		align-items: center
+		.fas 
+			color: $accent
+			margin-left: 5px
+			font-size: 17px
+			cursor: pointer
+			
+		&:hover
+			color: rgb( 34, 34, 34 )
+			text-decoration: none
+
+.blog-btn
+	margin-top: 60px
+	margin-bottom: 100px
+
+.blog-header
+	margin-bottom: 60px
+
+.blog
+	margin-bottom: 40px
+
+.subscribe
+	display: flex
+	justify-content: center
+	&-input
+		font-size: 15px
+		color: #000
+		line-height: 1
+		text-align: left
+		border: $accent 1px solid
+		border-radius: 3px
+		padding: 5px 15px
+		width: 248px
+		margin-right: 10px
+		height: 40px
+		&:hover,&:active,&:focus
+			outline: none
+			background-color: #efe4e3
+
+
+	&-button
+		background-color: $accent
+		color: #fff
+		font-size: 15px
+		padding: 7px
+		width: 120px
+		display: inline-block
+		border-radius: 3px
+		cursor: pointer
+		box-shadow: 0px 5px 30px 0px rgba(#1f2325, .25)
+		transition: all .3s ease
+		margin-bottom: 12px
+		border: none
+		height: 40px
+		&:hover,&:active
+			background-color: darken($accent, 10%)
+			text-decoration: none
+			color: #fff
+			outline:  none
+		&:focus
+			background-color: darken($accent, 18%)
+			outline:  none
+
+@import "media" // Всегда в конце

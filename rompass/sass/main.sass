@@ -1,0 +1,1060 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 18px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	font-weight: 400
+	overflow-x: hidden
+	margin: 0
+	color: #231f20
+
+h1,h2,h3,h4,h5,h6,.h1,.h1,.h3,.h4,.h5,.h6
+	line-height: 1.35
+	text-transform: uppercase
+	margin: 0
+	padding: 0
+
+h1
+	font-size: 45px
+
+h2
+	font-size: 36px
+	font-weight: 400
+
+h3
+	font-size: 30px
+	font-weight: 400
+
+h4
+	font-size: 24px
+	font-weight: 400
+
+.blue
+	color: $accent
+
+.red
+	color: $red
+
+ul, li
+ margin: 0
+ padding: 0
+
+.container-padding
+	padding: 60px 0
+
+.button-blue
+	display: inline-block
+	border: none
+	color: #fff
+	text-decoration: none
+	background-color: $accent
+	padding: 15px 45px
+	font-size: 12px
+	text-transform: uppercase
+	line-height: 1.897
+	font-weight: 800
+	border-radius: 2px
+	text-align: center
+	position: relative
+	outline: none
+	transition: background-color .1s ease
+	cursor: pointer
+	&::after
+		position: absolute
+		content: ''
+		height: 4px
+		bottom: 0
+		width: 100%
+		background-color: darken($accent, 50%)
+		opacity: .18
+		border-bottom-left-radius: 2px
+		border-bottom-right-radius: 2px
+		left: 0
+		transition: background-color .2s ease
+	&:focus, &:hover
+		text-decoration: none
+		color: #fff
+	&:hover
+		background-color: lighten($accent, 5%)
+		&::after
+			opacity: .22
+	&:active
+		background-color: darken($accent, 5%)
+		&::after
+			opacity: .32
+
+.button
+		display: inline-block
+		border: none
+		color: #fff
+		text-decoration: none
+		background-color: $red
+		padding: 15px 45px
+		font-size: 12px
+		text-transform: uppercase
+		line-height: 1.897
+		font-weight: 800
+		border-radius: 2px
+		text-align: center
+		position: relative
+		outline: none
+		transition: background-color .1s ease
+		cursor: pointer
+		&::after
+			transition: background-color .2s ease
+			position: absolute
+			content: ''
+			height: 4px
+			bottom: 0
+			width: 100%
+			background-color: darken($red, 50%)
+			opacity: .18
+			border-bottom-left-radius: 2px
+			border-bottom-right-radius: 2px
+			left: 0
+			outline:  none
+		&:focus, &:hover
+			text-decoration: none
+			color: #fff
+			outline:  none
+		&:hover
+			background-color: lighten($red, 5%)
+			&::after
+				opacity: .22
+		&:active
+			background-color: darken($red, 5%)
+			&::after
+				opacity: .32
+
+.section
+	padding-top: 60px
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+// Mobile mnu
+//Mobile Menu
+.toggle-mnu 
+  display: block
+  width: 28px
+  height: 28px
+  float: left
+  padding-top: 4px
+  span:after, span:before 
+    content: ""
+    position: absolute
+    left: 0
+    top: 9px
+
+  span:after
+    top: 18px
+
+  span 
+    position: relative
+    display: block
+
+  span, span:after, span:before
+    width: 100%
+    height: 2px
+    background-color: $orange
+    transition: all 0.3s
+    backface-visibility: hidden
+    border-radius: 2px
+
+
+  &.on span 
+    background-color: transparent
+
+  &.on span:before 
+    transform: rotate(45deg) translate(-1px, 0px)
+
+  &.on span:after 
+    transform: rotate(-45deg) translate(6px, -7px)
+
+.mobile-mnu
+	padding: 5px 15px 5px 15px
+	color: #fff
+	background-color: $accent
+	position: relative
+	z-index: 2
+	cursor: pointer
+	width: 100%
+	b
+		display: block
+		text-align: center
+
+#my-menu
+	z-index: 3
+.mm-navbar
+	margin: 0
+	padding: 0
+.mm-navbar__title
+	color: #fff!important
+	background-color: $accent!important
+.mm-listitem
+	color: #fff!important
+	background-color: $accent!important
+	&:hover,&:focus,&:active
+		a
+			background-color: $orange
+// Molbile MNU
+
+.top-line
+	align-items: center
+	padding: 20px 0 30px
+	h2
+		text-transform: none
+		margin: 0
+		font-size: 35px
+		color: $accent
+		position: relative
+		text-align: center
+	.logo
+		img
+			width: 70px
+			height: auto
+			padding-top: 5px
+	.but-wrap
+		text-align: right
+		.button-blue
+			background-color: $accent
+			padding: 12px 30px
+			&:hover
+				background-color: lighten($accent, 5%)
+			&:active
+				background-color: darken($accent, 5%)
+			&:after
+				background-color: darken($accent, 50%)
+
+
+
+.main-menu
+	background-color: $accent
+	ul
+		list-style-type: none
+		display: flex
+		justify-content: space-between
+		.fas
+			color: #fff
+		li 
+			display: inline-block
+			padding: 15px
+			&.active
+				background-color: $orange
+			a 
+				color: #fff
+				text-decoration: none
+				transition: all .3s ease
+				&:hover
+					text-decoration: underline
+
+
+
+.header-content
+	padding-top: 18px
+	padding-bottom: 30px
+	background-image: url(../img/Glavnaia/1-min.png)
+	background-repeat: no-repeat
+	background-position: bottom center
+	background-size: cover
+	position: relative
+	&:before 
+		content: ""
+		position: absolute
+		bottom: 0
+		top: 0
+		right: -5px
+		background: linear-gradient(to left, #e3f2f8, transparent)
+		width: 50%
+	&:after
+		content: ""
+		position: absolute
+		bottom: 0
+		top: 0
+		left: 0
+		background: linear-gradient(to right, #e3f2f8, transparent)
+		width: 1%
+	.left
+		text-align: left
+		padding-left: 5px
+		.preheader
+			font-size: 36px
+			font-weight: 300
+			text-transform: uppercase
+			margin-top: 30px
+		h1
+			font-weight: 800
+			span 
+				color: $red
+		.logo
+			img
+				width: 280px
+	.right
+		.time,.location
+			margin-bottom: 17px
+		.time,.location,.phone
+			display: flex
+			img
+				width: 28px
+				margin-right: 12px
+			p 
+				margin: 0
+
+.right-form
+	background-color: rgba(#d4dae0, .7)
+	width: 320px
+	padding: 15px 15px
+	text-align: center
+	color: #000
+	margin-top: 20px
+	h2
+		font-size: 32px
+		line-height: 1
+		font-weight: 400
+	.subtitle
+		font-size: 21px
+		line-height: 1
+		margin-bottom: 20px
+		font-weight: 300
+	textarea
+		margin-top: 5px
+	input,textarea
+		margin-bottom: 10px
+		width: 100%
+		padding: 10px 10px 6px
+		background-color: #d0e2ea
+		border: none
+		opacity: .7
+		outline: none
+		&::placeholder
+			color: #000
+			font-size: 18px
+			font-family: $default-font
+			color: rgb( 35, 31, 32 )
+			font-weight: 300
+	.button
+		padding: 8px 30px
+			
+
+.select-us
+	position: relative
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	padding-bottom: 40px
+	box-shadow: inset 0px 0px 40px 0px rgba( 0,0,0,.5 )
+	h2
+		text-align: center
+	&__item
+		text-align: center
+		margin-top: 50px!important
+		height: auto!important
+		&__icon
+			display: flex
+			align-items: center
+			justify-content: center
+		&__header
+			margin-top: 25px
+			margin-bottom: 10px
+			height: auto
+
+
+.vzaimod
+	h2
+		text-align: center
+		margin-bottom: 35px
+	.vzaimod__item
+		text-align: center
+		height: auto!important
+		&__img
+			width: 100%
+			height: auto!important
+		h4
+			margin-top: 20px
+			font-weight: 400
+		&__text
+
+
+.uslugi
+	box-shadow: inset 0px 0px 40px 0px rgba( 0,0,0,.5 )
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	.container-padding
+		padding-bottom: 70px
+	h2
+		text-align: center
+		margin-bottom: 20px
+	&__item
+		display: flex
+		margin-top: 30px
+		height: auto!important
+		&__img
+			background-color: $accent
+			border-radius: 10em
+			margin-right: 20px
+			height: 70px
+			width: 70px
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 5px
+			img
+				width: 40px
+		&__text
+			width: 70%
+			margin-bottom: 0
+			line-height: 1.3
+			span 
+				font-size: 18px
+				text-transform: uppercase
+				
+.new-vozm
+	.container
+		background-image: url(../img/Glavnaia/5-min.png)
+		background-repeat: no-repeat
+		background-position: -30% center
+		background-size: cover
+		position: relative
+		&:before 
+			content: ""
+			position: absolute
+			bottom: 0
+			top: 0
+			left: 60px
+			background: linear-gradient(to right, #e3f2f8, transparent)
+			width: 20%
+		&:after
+			content: ""
+			position: absolute
+			bottom: 0
+			top: 0
+			right: -2px
+			background: linear-gradient(to left, #e3f2f8, transparent)
+			width: 30%
+	.container-padding
+	.flag
+		position: absolute
+		background-image: url(../img/flag.svg)
+		background-repeat: no-repeat
+		background-position: center center
+		background-size: cover
+		top: 130px
+		left: -850px
+		width: 1450px
+		height: 310px
+		opacity: .5
+	.bg-wrapper
+	&__content
+		&__header
+			font-weight: 800
+			color: $accent
+		&__text
+			font-size: 36px
+			margin-top: 300px
+			font-weight: 300
+			line-height: 1.3
+
+.last-info
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	box-shadow: inset 0px 0px 40px 0px rgba( 0,0,0,.5 )
+	h2
+		text-align: center
+	.button-blue
+		padding: 12px 30px
+		margin-top: 20px
+		margin-left: auto
+		display: flex
+		width: 150px
+	&__item
+		text-align: center
+		margin-top: 70px
+		height: auto!important
+		&__img
+			margin-bottom: 20px
+			img
+				width: 100%
+				height: auto
+		&__text
+
+footer
+	background-color: #262262
+	.footer-padding
+		padding: 30px 0
+		.request
+			&__header
+				color: #fff
+				font-weight: 600
+				font-size: 24px
+				margin-bottom: 50px
+			&__button
+				padding: 8px 30px
+				margin-bottom: 50px
+			&__logo
+				img
+					width: 160px
+		.menu-header
+			color: #fff
+			font-weight: 600
+			font-size: 24px
+			margin-bottom: 10px
+		.footer-menu
+			ul
+				list-style-type: none
+				li
+					margin-bottom: 5px
+					&:hover,&:focus,&:active
+						a
+							color: $red
+						.fa-minus
+							color: $red
+					.fas
+						color: #fff
+						margin-right: 10px
+						transition: all .3s ease
+					a 
+						color: #fff
+						text-decoration: none
+						transition: all .3s ease
+		.footer-contacts
+			margin-left: auto
+			h2
+				color: #fff
+				font-weight: 600
+				font-size: 24px
+				margin-bottom: 10px
+			.footer-contacts__adress,.footer-contacts__phone
+				display: flex
+				img
+					margin-right: 10px
+					width: 30px
+				p
+					color: #fff
+
+
+// PASS
+.pass-head
+	padding: 30px 0 40px
+	h2
+		font-weight: 800
+		color: $red
+		margin-top: 70px
+		span
+		 color: $accent
+
+.pass-info
+	h2
+		font-family: $default-font
+		font-weight: 100
+		text-transform: none
+	.select-us__item__icon
+		img
+			width: 85px
+			
+// PASS
+
+
+
+
+// O o-nas
+.o-nas
+	.row
+		background-repeat: no-repeat
+		background-position: right center
+		height: 420px
+	h2
+		font-weight: 800
+		text-transform: none
+		margin-top: 75px
+		color: $red
+		span
+			color: $accent
+
+.w-pass
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	box-shadow: inset 0px 0px 40px 0px rgba( 0,0,0,.5 )
+	h2
+		text-align: center
+		margin-bottom: 35px
+	.wp-item
+		border: $accent	1px solid
+		padding: 20px 8px
+		margin-bottom: 30px
+		p 
+			font-weight: 100
+		&__head
+			display: flex
+			flex-direction: row
+			align-items: start
+			.heading
+				text-transform: none
+				font-weight: 400
+			img
+				width: 35px
+				margin-left: auto
+
+
+.mb-0
+	button
+		&:after 
+			content: "\f067" /* fa-chevron-down */
+			font-family: 'FontAwesome'
+			position: absolute
+			right: 0
+			opacity: .5
+			font-size: 19px
+
+.mb-0 >button[aria-expanded="true"]:after 
+	content: "\f068" /* fa-chevron-up */
+	opacity: .5
+	font-size: 19px
+
+
+
+.accordion
+	.card
+		background-color: transparent
+		button
+			color: #231f20
+			font-size: 24px
+			font-weight: 400
+			transition: all .3s ease
+			&:hover,&:active,&:focus
+				text-decoration: none
+				color: $red
+		.mb-0
+			button
+				display: flex
+				align-items: center
+				width: 100%
+				position: relative
+		.col-content
+			display: flex
+			&__img
+				width: 260px
+				height: 175px
+				margin-top: 5px
+			&__text
+				font-weight: 300
+				padding-left: 15px
+
+
+.zakrepim
+	.container-padding
+		padding-bottom: 70px
+	h2
+		text-align: center
+		margin-bottom: 20px
+	&__img-wraper
+		margin-top: 30px
+		position: relative
+		display: flex
+		justify-content: center
+		align-items: center
+		position: relative
+		.center-content
+			width: 255px
+			height: 180px
+			background-color: #000
+			opacity: .0
+			position: absolute
+			display: flex
+			flex-direction: column
+			justify-content: center
+			text-align: center
+			&:hover
+				opacity: .5
+				cursor: default
+			p 
+				color: #fff
+				line-height: 1.2
+			img
+				width: 45px
+				height: 45px
+				margin-left: auto
+				margin-right: auto
+				margin-bottom: 12px
+		img
+			width: 100%
+			height: auto
+
+.come-time
+	text-align: center
+	color: #fff
+	h2
+		margin-bottom: 20px
+	p
+		font-size: 30px
+		font-weight: 300
+		line-height: 1.3
+		margin-bottom: 40px
+	.button
+		padding: 12px 40px
+
+.team
+	h2
+		text-align: center
+		margin-bottom: 20px
+	p 
+		text-align: center
+		font-size: 36px
+		font-weight: 300
+		line-height: 1
+		margin-bottom: 50px
+	.team__member
+		&__img
+		 width: 100%
+		 height: auto!important
+		&__text
+
+.comments
+	box-shadow: inset 0px 0px 40px 0px rgba( 0,0,0,.5 )
+	h2
+		text-align: center
+		margin-bottom: 50px
+	.comment
+		background-color: rgba(255,255,255,.3)
+		span
+			font-size: 36px
+			font-weight: 800
+			color: $accent
+			line-height: 1
+		p 
+			margin-top: -10px
+			padding: 0 7px
+// O o-nas
+
+// Documents
+.docs
+	padding: 70px 0 100px
+	h2
+		text-align: center
+		margin-bottom: 60px
+	.accordion
+		width: 100%
+		border: $accent 1px solid
+		.card
+			.card-header
+				border-bottom: $accent 1px solid
+				.fas 
+					margin-left: auto
+					width: 10px
+					opacity: .6
+				p
+					text-align: left
+					padding: 0
+					margin: 0
+			.col-content
+				ul
+					list-style-type: none
+					margin-left: 10px
+					li 
+						font-weight: 300
+						line-height: 1.4
+// Documents
+
+// Podgotovka
+.podgotovka
+	text-align: center
+	h2
+		margin-bottom: 30px
+	p 
+		font-size: 30px
+		font-weight: 300
+		line-height: 1
+		margin-bottom: 10px
+	&__item
+		border: $accent 1px solid
+		padding: 10px 7px
+		margin-bottom: 40px
+		margin-top: 10px
+		.heading
+			display: flex
+			margin-bottom: 25px
+			img
+				width: 60px
+				height: 60px
+				margin-left: auto
+				margin-top: 5px
+		p 
+			font-size: 18px
+
+.kak-eto
+	text-align: center
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	box-shadow: inset 0 0 40px 0 rgba(0,0,0,.5)
+	p 
+		font-size: 30px
+		font-weight: 300
+		line-height: 1
+
+.img-blocks.container-fluid,.img-blocks-2.container-fluid,.s-img-blocks3
+	padding: 0
+
+.s-img,.s-img2,.s-img3
+	.container-fluid
+		padding: 0
+		.blocks
+			display: flex
+			.img-block
+				width: 50%
+				position: relative
+				&:hover
+					.img-block__overlay
+						opacity: .6
+				img
+					display: block
+					max-width: 100%
+					height: auto!important
+					
+.img-block__overlay
+	position: absolute
+	width: 100%
+	height: 100%
+	top: 0
+	left: 0
+	background-color: #000
+	opacity: 0
+	display: flex
+	justify-content: center
+	align-items: center
+	text-align: center
+	h4
+		color: #fff
+
+
+
+
+.recomenduem
+	text-align: center
+	color: #fff
+	h3
+		font-size: 27px
+		font-weight: 300
+	h2
+		font-size: 45px
+		font-weight: 300
+
+.dop-doki
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	text-align: center
+	box-shadow: inset 0 0 40px 0 rgba(0,0,0,.5)
+	h2
+		margin-bottom: 40px
+// Podgotovka
+
+// Price
+.price
+	padding: 50px 0 90px
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	h2
+		margin-bottom: 15px
+		text-align: center
+	p 
+		font-size: 30px
+		font-weight: 300
+		line-height: 1
+		text-align: center
+		margin-bottom: 50px
+	.price-item
+		&__banner
+			width: 100%
+			height: 355px
+			background-color: #002b64
+			color: #fff
+			background-repeat: no-repeat
+			background-position: center center
+			background-size: 320px
+			text-align: center
+			.cel
+				padding: 0
+				margin-top: -30px
+				font-size: 18px
+				margin-bottom: 80px
+			h4
+				margin-bottom: 40px
+				padding-top: 20px
+			span 
+				font-size: 95px
+				font-weight: 300
+				small
+					font-weight: 300
+			h6
+				font-size: 24px
+				font-weight: 400
+				text-transform: none
+		&__content2
+			padding: 20px
+			border: #666 1px solid
+			ul
+				list-style-type: none
+				li
+					&:nth-child(3)
+						color: $red
+						font-weight: 600
+						i 
+							color: $red
+					i 
+						margin-right: 10px
+						color: #666
+		&__content
+			padding: 20px
+			border: #666 1px solid
+			ul
+				list-style-type: none
+				li
+					&:nth-child(3)
+						color: $accent
+						font-weight: 600
+						i 
+							color: $accent
+					i 
+						margin-right: 10px
+						color: #666
+// Price
+
+// Clients
+.clients-header
+	.row
+		background-repeat: no-repeat
+		background-position: right center
+		height: 420px
+		position: relative
+	h2
+		color: $red
+		font-weight: 600
+		margin-top: 60px
+		margin-bottom: 50px
+		text-transform: none
+		font-size: 46px
+		span
+			color: $accent
+	p 
+		font-style: 24px
+		font-weight: 300
+		text-transform: uppercase
+		span 
+			color: $accent
+			font-weight: 600
+// Clients
+
+
+// Contacts
+.contact-map
+	background-repeat: no-repeat
+	background-position: center center
+	background-size: cover
+	h2
+		text-align: center
+		margin-bottom: 20px
+	&__form
+			form
+				margin-left: auto
+				margin-right: auto
+				width: 100%
+				background-color: transparent
+				margin-top: 40px
+				input,textarea
+					border: #666	1px solid
+					background-color: #fff
+				.button-area
+					display: flex
+					align-items: center
+					justify-content: space-between
+					p 
+						font-weight: 300
+						margin: 0
+						padding: 0
+					button
+						max-height: 50px
+	&__daten
+		&__item
+			display: flex
+			margin-bottom: 50px
+			&__img
+				width: 65px
+				height: 65px
+				border: $accent	2px solid
+				border-radius: 10em
+				display: flex
+				justify-content: center
+				margin-right: 25px
+				img
+					margin-left: auto
+					margin-right: auto
+					width: 28px
+			&__text
+				p 
+					padding: 0
+					margin-bottom: 0
+
+.container-padding-podg			
+	padding: 60px 0		
+
+.contact-map__daten__item__img-wrapper
+	width: 20%
+
+// Contacts
+
+
+
+
+@import "media" // Всегда в конце

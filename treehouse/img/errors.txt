@@ -1,0 +1,4 @@
+[Wed Dec 05 2018 22:08:10 GMT+0300 (RTZ 2 (зима))] layer "hello@treehouse.com": Unsupported extension: com
+[Wed Dec 05 2018 22:08:10 GMT+0300 (RTZ 2 (зима))] layer "Google+": Expected end of input but "+" found.
+[Wed Dec 05 2018 22:08:10 GMT+0300 (RTZ 2 (зима))] layer "© Copyright 2014 FreebiesXpress.com": Unsupported extension: com
+[Wed Dec 05 2018 22:08:10 GMT+0300 (RTZ 2 (зима))] layer "Google+": Expected end of input but "+" found.

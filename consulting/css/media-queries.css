@@ -1,0 +1,289 @@
+/* ---------------- Media Queries ---------------- */
+
+/* 992-1200px */
+
+@media screen and (max-width: 1200px) {
+    .short {
+        width: 100%;
+    }
+    .nav-btn {
+        margin-left: 0;
+    }
+    .advantage::after {
+        width: 100%;
+    }
+    .header {
+        padding-bottom: 80px;
+    }
+    .services-nav {
+        padding-left: 0;
+    }
+    .contacts-nav {
+        margin-left: auto;
+    }
+    .work-item {
+        margin-left: 0;
+    }
+    .card__puncts li {
+        padding-right: 45px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .location {
+        position: absolute;
+        top: -396px;
+        right: 15px;
+    }
+}
+
+/* 768-992px */
+
+@media screen and (max-width: 992px) {
+    .logo__img {
+        width: 100%;
+    }
+    .nav-btn {
+        margin-top: 0;
+    }
+    .navigation {
+        padding-bottom: 14px;
+    }
+    .merits {
+        margin-bottom: 50px;
+    }
+    .feature {
+        margin-bottom: 45px;
+    }
+    .news {
+        margin-top: 45px;
+    }
+    .news__info {
+        width: 100%;
+    }
+    .credits, .reserved {
+        padding-top: 0;
+    }
+    .footer {
+        padding-top: 36px;
+    }
+    .about-ofer, .services-ofer, .contacts-ofer {
+        text-align: center;
+    }
+    .ofer__page {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .contacts-nav {
+        padding: 0;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
+    }
+    .consultation {
+        width: 100%;
+        background: url(../img/Conference-Call.png) no-repeat 550px 87px;
+    }
+    .card__info-text {
+        width: 100%;
+    }
+}
+
+/* 576-768px */
+
+@media screen and (max-width: 768px) {
+    .location {
+        position: static;
+        width: 100%;
+        margin: 22px auto;
+        left: 0;
+    }
+    .location::before {
+        display: none;
+    }
+    .mission__body {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .mission__btn {
+        margin: 35px 0;
+    }
+    .mission__target, .mission__target_short {
+        margin: 0;
+        width: 100%;
+    }
+    .footer {
+        text-align: center;
+    }
+    .credits__body, .reserved__body {
+        margin: 30px 0;
+    }
+    .reserved__design {
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .footer-btn {
+        margin: 15px auto 0;
+    }
+    .details {
+        text-align: center;
+    }
+    .ofer {
+        padding-bottom: 30px;
+    }
+    .ofer-nav {
+        text-align: center;
+    }
+    .services-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        margin: 0;
+    }
+    .services-nav li {
+        margin: 10px auto;
+    }
+    .services-nav li a {
+        text-align: center;
+    }
+    .consultation {
+        background: url(../img/Conference-Call.png) no-repeat 95% 88%;
+    }
+    .work-item {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+    .jurisprudent {
+        text-align: center;
+        margin-top: 30px;
+    }
+    .jurisprudent__text {
+        width: 100%;
+    }
+}
+
+/* 320-576px */
+
+@media screen and (max-width: 576px) {
+    .main-ofer__title {
+        font-size: 45px;
+    }
+    .main-ofer__text {
+        width: 100%;
+        font-size: 25px;
+    }
+    .deserved-title {
+        font-size: 25px;
+    }
+    .ofer-nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .ofer-nav li {
+        padding: 15px 0;
+        margin: 10px auto;
+        padding: 10px 20px;
+    }
+    .advantages-headline {
+        margin-bottom: 0;
+    }
+    .advantages-wrap {
+        padding-bottom: 35px;
+    }
+    .advantage {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .advantage__icon {
+        margin-bottom: 32px;
+    }
+    .galery-title {
+        text-align: center;
+    }
+    .mail {
+        margin-bottom: 30px;
+    }
+    .animated {
+        opacity: 1;
+        -webkit-animation: none;
+        animation: none;
+    }
+}
+
+@media screen and (min-width: 470px) {
+    .consultation__request {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .modal-card {
+        width: 100%;
+        padding: 30px 40px;
+    }
+    .modal-card__btn, .modal-card__form input {
+        width: 100%;
+    }
+    .nav-btn {
+        display: none;
+    }
+    .logo__img {
+        min-width: 150%;
+    }
+    .consultation {
+        padding-left: 20px;
+        padding-right: 0px;
+    }
+    .consultation__request {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .consultation__tel {
+        margin-left: 0;
+    }
+    .consultation__btn {
+        -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+        order: 1;
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .nav-btn {
+        width: 130px;
+        font-size: 12px;
+    }
+    .main-ofer__title {
+        font-size: 40px;
+    }
+    .main-ofer__text {
+        font-size: 22px;
+    }
+    .social {
+        margin: 15px auto 0;
+    }
+    .modal-card {
+        width: 100%;
+        padding: 30px 40px;
+    }
+    .modal-card__btn, .modal-card__form input {
+        width: 100%;
+    }
+}
