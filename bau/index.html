@@ -31,6 +31,11 @@
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
 
+
+	<link rel="stylesheet" href="_fonts.css">
+	<link rel="stylesheet" href="_header.css">
+	<link rel="stylesheet" href="_main.css">
+	<link rel="stylesheet" href="_media.css">
 </head>
 
 <body>
@@ -655,18 +660,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 
-	<!-- Load CSS -->
-	<script>
-		function loadCSS(hf) {
-			var ms=document.createElement("link");ms.rel="stylesheet";
-			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
-		}
-		loadCSS("_fonts.css")
-		loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
-		loadCSS("_main.css");                //User Styles: Main
-		loadCSS("_media.css");               //User Styles: Media
-	</script>
-
+	
 	<!-- Load CSS compiled without Bootstrap & Header styles (after release) -->
 	<script>//var ms=document.createElement("link");ms.rel="stylesheet";
 		// ms.href="compiled.min.css";document.getElementsByTagName("head")[0].appendChild(ms);
